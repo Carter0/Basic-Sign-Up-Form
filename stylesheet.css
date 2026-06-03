@@ -108,7 +108,10 @@ body {
 .input-column {
     display: flex;
     flex-direction: column;
+    gap: 4px;
     margin-top: 20px;
+
+    /* All inputs should grow and shrink evenly and take up whole container */
     flex: 1;
     min-width: 220px;
     max-width: 300px;
@@ -120,9 +123,30 @@ body {
 }
 
 .input-column input {
-    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
 }
+
+.input-column input:user-invalid {
+    border-color: red;
+}
+
+.input-column input:focus {
+    border-color: aliceblue;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Submit section */
 
 .submit-section {
     padding-left: 30px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
 }
