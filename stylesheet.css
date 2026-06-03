@@ -29,15 +29,30 @@ body {
     /* Move element down 20 percent from the top */
     position: absolute;
     top: 20%;
+    width: 100%;
 
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 
     /* Add the transparent background color*/
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5vw 0;
+}
+
+.logo-banner img {
+    /* 5vw means 5% of the browser width */
+    width: 5vw;
+    min-width: 40px;
+    max-width: 100px;
+}
+
+.logo-banner h1 {
+    /* 5vw means 5% of the browser width */
+    color: white;
+    font-size: 5vw;
+    margin: 0;
 }
 
 
