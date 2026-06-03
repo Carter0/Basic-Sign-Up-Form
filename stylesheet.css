@@ -13,7 +13,7 @@ body {
 
 .container {
     display: flex;
-    /* The image/this container should fill the entire height of the screen */
+    /* The image/container should fill the entire height of the screen */
     min-height: 100vh;
 }
 
@@ -123,6 +123,7 @@ body {
 }
 
 .input-column input {
+    /* Override the default inputs with your own styling */
     border-radius: 4px;
     border: 1px solid #ccc;
     padding: 8px 10px;
