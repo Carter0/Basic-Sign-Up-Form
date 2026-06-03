@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Norse";
+    src: url("assets/fonts/Norsebold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
 }
@@ -53,6 +61,7 @@ body {
     color: white;
     font-size: 5vw;
     margin: 0;
+    font-family: "Norse", sans-serif;
 }
 
 
@@ -73,8 +82,10 @@ body {
     padding-left: 30px;
 }
 
-.submit-section {
-    padding-left: 30px;
+.text-section>p {
+    /* 1.25 time the root font size */
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .inputs {
@@ -83,13 +94,35 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.inputs>p {
+    /* 1.25 time the root font size */
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 .form-row {
     display: flex;
-    gap: 40px;
+    gap: 100px;
 }
 
 .input-column {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+}
+
+.input-column label {
+    color: #4a4a4a;
+    font-size: 0.75rem;
+}
+
+.input-column input {
+    width: 100%;
+}
+
+.submit-section {
+    padding-left: 30px;
 }
